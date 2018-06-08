@@ -66,9 +66,15 @@ One of the methods used for checking filter consistency is by using NIS. To calc
 ![Screenshot](./images/NIS_plot.JPG)
 
 ## RMSE (Root Mean Square Error)
-The final values can be seen from the screen below:
+The final values for UKF can be seen from the screen below:
 
 ![Screenshot](./images/ukf_final.JPG)
 
-The CRTV (Constant Turn Rate and Velocity Magnitude) model used for this project handles velocity much better than the model used for the Extended Kalman Filter. This model performs better with non-linear functions.
+The final RMSE values from EKF are below:
+X: 0.0963
+Y: 0.0854
+VX: 0.4136
+VY: 0.4807
+
+The CRTV (Constant Turn Rate and Velocity Magnitude) model used for this project handles velocity much better than the model used for the Extended Kalman Filter as seen from the values above. This model also performs better with non-linear functions.
 
