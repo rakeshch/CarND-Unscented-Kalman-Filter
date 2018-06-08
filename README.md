@@ -76,5 +76,5 @@ Y: 0.0854
 VX: 0.4136
 VY: 0.4807
 
-The CRTV (Constant Turn Rate and Velocity Magnitude) model used for this project handles velocity much better than the model used for the Extended Kalman Filter as seen from the values above. This model also performs better with non-linear functions.
+The CRTV (Constant Turn Rate and Velocity Magnitude) model used for this project handles velocity much better than the model used for the Extended Kalman Filter as seen from the values above. This model performs better with non-linear functions.
 
