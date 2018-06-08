@@ -60,3 +60,15 @@ OUTPUT: values provided by the c++ program to the simulator
 4. Run it: `./UnscentedKF` Previous versions use i/o from text files.  The current state uses i/o
 from the simulator.
 
+## Normalized Innovation Squared (NIS)
+One of the methods used for checking filter consistency is by using NIS. To calculate NIS, this method first measures the innovation, which is the difference between the estimated positions and the ground truth value. This difference is then normalized by the inverse of the vector S. NIS says that in a 3 dimentional space, approximately 5% of the NIS values should be over 7.8. with a proper implementation of your algorithm. This holds true when looking at the charts for lidar and radar NIS values below:
+
+![Screenshot](./images/NIS_plot.JPG)
+
+## RMSE (Root Mean Square Error)
+The final values can be seen from the screen below:
+
+![Screenshot](./images/ukf_final.JPG)
+
+The CRTV (Constant Turn Rate and Velocity Magnitude) model used for this project handles velocity much better than the model used for the Extended Kalman Filter. This model performs better with non-linear functions.
+
