@@ -1,7 +1,16 @@
 # Unscented Kalman Filter Project 
-Self-Driving Car Engineer Nanodegree Program
 
-This project utilizes an Unscented Kalman Filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. 
+This project implements an unscented Kalman filter (UKF) using the CTRV motion model to estimate the state of a moving object of interest with noisy lidar and radar measurements. We will be using the same bicycle simulation data set from the extended Kalman filter project. That way we can compare your results with the [EKF project](https://github.com/rakeshch/CarND-Extended-Kalman-Filter).
+
+Remember that all Kalman filters have the same three steps:
+
+Initialization
+
+Prediction
+
+Update
+
+A standard Kalman filter can only handle linear equations. Both the extended Kalman filter and the unscented Kalman filter allow you to use non-linear equations; the difference between EKF and UKF is how they handle non-linear equations. But the basics are the same: initialize, predict, update.
 
 This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases)
 
