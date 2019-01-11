@@ -74,7 +74,8 @@ The final values for UKF can be seen from the screen below:
 
 ![Screenshot](./images/ukf_final.JPG)
 
-The final RMSE values from EKF are below:
+The final RMSE values from EKF were:
+
 X: 0.0963
 Y: 0.0854
 VX: 0.4136
